@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Studio Verde – Móveis Planejados de Alto Padrão</title>
+  <meta name="description" content="Móveis planejados de alto padrão: cozinhas, closets, home theaters e ambientes corporativos. Design autoral, execução premium e sustentabilidade." />
+  <meta name="theme-color" content="#0ea765" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#ecfdf5',
+              100: '#d1fae5',
+              200: '#a7f3d0',
+              300: '#6ee7b7',
+              400: '#34d399',
+              500: '#10b981',
+              600: '#0ea765',
+              700: '#0b8251',
+              800: '#0a6842',
+              900: '#064e3b'
+            }
+          },
+          fontFamily: {
+            sans: ['Poppins', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            serif: ['Playfair Display', 'ui-serif', 'Georgia', 'serif']
+          },
+          boxShadow: {
+            soft: '0 10px 30px rgba(16, 185, 129, 0.15)'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .glass { backdrop-filter: blur(8px); background: rgba(255,255,255,.06); }
+    .hero-gradient { background: radial-gradient(1000px 600px at 10% 10%, rgba(16,185,129,.18), transparent 60%), radial-gradient(900px 600px at 90% 20%, rgba(16,185,129,.14), transparent 55%), linear-gradient(180deg, #0a0f0d 0%, #0c1712 100%); }
+    .clip-angled { clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%); }
+    .fade-up { opacity: 0; transform: translateY(18px); transition: all .7s ease; }
+    .fade-up.show { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body class="bg-neutral-950 text-white antialiased selection:bg-brand-400/40">
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-neutral-950/70">
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="flex items-center justify-between py-4">
+        <a href="#top" class="group inline-flex items-center gap-3">
+          <span class="inline-grid place-items-center w-10 h-10 rounded-2xl bg-brand-600 shadow-soft group-hover:scale-105 transition">
+            <!-- Leaf Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="w-6 h-6" stroke-width="1.5"><path d="M3 21c8-2 13-7 18-18"/><path d="M3 21c.5-4.5 4-8 8.5-8.5"/></svg>
+          </span>
+          <span class="font-serif text-xl tracking-wide">Studio <span class="text-brand-400">Verde</span></span>
+        </a>
+        <nav class="hidden md:flex items-center gap-8 text-sm">
+          <a href="#portfolio" class="hover:text-brand-300">Portfólio</a>
+          <a href="#processo" class="hover:text-brand-300">Processo</a>
+          <a href="#sobre" class="hover:text-brand-300">Sobre</a>
+          <a href="#contato" class="hover:text-brand-300">Contato</a>
+          <a href="https://wa.me/5599999999999" class="rounded-xl bg-brand-600 px-4 py-2 font-medium hover:bg-brand-500 transition shadow-soft">Solicitar Orçamento</a>
+        </nav>
+        <button id="menuBtn" class="md:hidden p-2 rounded-xl bg-white/5" aria-label="Abrir menu">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="w-6 h-6"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+      <div id="mobileMenu" class="md:hidden hidden pb-6">
+        <div class="glass rounded-2xl p-4 space-y-2">
+          <a href="#portfolio" class="block p-2 rounded-lg hover:bg-white/5">Portfólio</a>
+          <a href="#processo" class="block p-2 rounded-lg hover:bg-white/5">Processo</a>
+          <a href="#sobre" class="block p-2 rounded-lg hover:bg-white/5">Sobre</a>
+          <a href="#contato" class="block p-2 rounded-lg hover:bg-white/5">Contato</a>
+          <a href="https://wa.me/5599999999999" class="block p-2 rounded-lg bg-brand-600 text-center hover:bg-brand-500">Solicitar Orçamento</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="top" class="hero-gradient clip-angled">
+    <div class="mx-auto max-w-7xl px-6 pt-20 pb-28">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="space-y-6 fade-up">
+          <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl leading-tight">
+            Móveis planejados <span class="text-brand-400">de alto padrão</span> que elevam seus ambientes.
+          </h1>
+          <p class="text-neutral-300 text-lg">
+            Design autoral, marcenaria de precisão e acabamentos premium. Projetos exclusivos para cozinhas, closets, áreas sociais e corporativas – com sustentabilidade no centro.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a href="#portfolio" class="rounded-2xl bg-brand-600 px-6 py-3 font-medium hover:bg-brand-500 transition shadow-soft">Ver Portfólio</a>
+            <a href="#contato" class="rounded-2xl border border-white/15 px-6 py-3 font-medium hover:border-brand-400/60 hover:text-brand-200 transition">Fale com a gente</a>
+          </div>
+          <div class="flex items-center gap-6 pt-4 text-sm text-neutral-300">
+            <div class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-brand-400"></span> Sob medida</div>
+            <div class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-brand-400"></span> Materiais certificados</div>
+            <div class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-brand-400"></span> Garantia estendida</div>
+          </div>
+        </div>
+        <div class="relative h-[420px] sm:h-[520px] lg:h-[560px] rounded-3xl overflow-hidden shadow-soft fade-up">
+          <img src="https://images.unsplash.com/photo-1600607687920-4ce7730d01ae?q=80&w=1600&auto=format&fit=crop" alt="Cozinha planejada elegante com detalhes em verde" class="w-full h-full object-cover"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-neutral-900/50 via-transparent"></div>
+          <div class="absolute bottom-4 left-4 right-4 glass rounded-2xl p-4 text-sm">
+            Cozinha Linha <strong>Verde Sálvia</strong> · Lâminas naturais · Sistema push-to-open
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFÓLIO -->
+  <section id="portfolio" class="py-24">
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="flex items-end justify-between mb-10">
+        <div>
+          <h2 class="font-serif text-3xl sm:text-4xl">Portfólio Selecionado</h2>
+          <p class="text-neutral-400 mt-2">Alguns projetos que traduzem nosso padrão de qualidade e atenção aos detalhes.</p>
+        </div>
+        <div class="hidden md:block">
+          <a href="#contato" class="inline-flex items-center gap-2 rounded-xl border border-white/10 px-4 py-2 hover:border-brand-400/60">
+            Agendar visita técnica
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <article class="group rounded-3xl overflow-hidden bg-white/5 hover:bg-white/10 transition fade-up">
+          <div class="relative h-64 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?q=80&w=1600&auto=format&fit=crop" alt="Sala de estar planejada com painéis em madeira e verde" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            <span class="absolute top-3 left-3 rounded-full bg-brand-600/90 px-3 py-1 text-xs">Living</span>
+          </div>
+          <div class="p-5">
+            <h3 class="font-medium">Painel Ripado & Home Theater</h3>
+            <p class="text-sm text-neutral-400 mt-2">Iluminação embutida, marcenaria curva e nichos personalizados.</p>
+          </div>
+        </article>
+        <!-- Card 2 -->
+        <article class="group rounded-3xl overflow-hidden bg-white/5 hover:bg-white/10 transition fade-up">
+          <div class="relative h-64 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1600&auto=format&fit=crop" alt="Cozinha gourmet com ilha e armários verdes" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            <span class="absolute top-3 left-3 rounded-full bg-brand-600/90 px-3 py-1 text-xs">Cozinha</span>
+          </div>
+          <div class="p-5">
+            <h3 class="font-medium">Cozinha Gourmet com Ilha</h3>
+            <p class="text-sm text-neutral-400 mt-2">Ferragens premium Blum, portas em laca microtexturizada.</p>
+          </div>
+        </article>
+        <!-- Card 3 -->
+        <article class="group rounded-3xl overflow-hidden bg-white/5 hover:bg-white/10 transition fade-up">
+          <div class="relative h-64 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1617093727343-374698b1b08b?q=80&w=1600&auto=format&fit=crop" alt="Closet planejado com iluminação e portas de vidro" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            <span class="absolute top-3 left-3 rounded-full bg-brand-600/90 px-3 py-1 text-xs">Closet</span>
+          </div>
+          <div class="p-5">
+            <h3 class="font-medium">Closet Vitrum</h3>
+            <p class="text-sm text-neutral-400 mt-2">Portas em vidro fumê, perfis pretos e iluminação em fita LED.</p>
+          </div>
+        </article>
+        <!-- Card 4 -->
+        <article class="group rounded-3xl overflow-hidden bg-white/5 hover:bg-white/10 transition fade-up">
+          <div class="relative h-64 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1567016376408-0226e4d0c1ea?q=80&w=1600&auto=format&fit=crop" alt="Home office planejado minimalista" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            <span class="absolute top-3 left-3 rounded-full bg-brand-600/90 px-3 py-1 text-xs">Home Office</span>
+          </div>
+          <div class="p-5">
+            <h3 class="font-medium">Escritório Minimal</h3>
+            <p class="text-sm text-neutral-400 mt-2">Mesa flutuante, canaletas invisíveis e acústica otimizada.</p>
+          </div>
+        </article>
+        <!-- Card 5 -->
+        <article class="group rounded-3xl overflow-hidden bg-white/5 hover:bg-white/10 transition fade-up">
+          <div class="relative h-64 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?q=80&w=1600&auto=format&fit=crop" alt="Quarto planejado sofisticado" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            <span class="absolute top-3 left-3 rounded-full bg-brand-600/90 px-3 py-1 text-xs">Quarto</span>
+          </div>
+          <div class="p-5">
+            <h3 class="font-medium">Suíte Aurora</h3>
+            <p class="text-sm text-neutral-400 mt-2">Cabeceira estofada sob medida e painéis de nogueira.</p>
+          </div>
+        </article>
+        <!-- Card 6 -->
+        <article class="group rounded-3xl overflow-hidden bg-white/5 hover:bg-white/10 transition fade-up">
+          <div class="relative h-64 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1596079890748-197ba89f9b5e?q=80&w=1600&auto=format&fit=crop" alt="Ambiente corporativo planejado" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            <span class="absolute top-3 left-3 rounded-full bg-brand-600/90 px-3 py-1 text-xs">Corporativo</span>
+          </div>
+          <div class="p-5">
+            <h3 class="font-medium">Boardroom Verde</h3>
+            <p class="text-sm text-neutral-400 mt-2">Mesa monolítica e boiseries acústicas em MDF naval.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIFERENCIAIS / PROCESSO -->
+  <section id="processo" class="py-24 bg-gradient-to-b from-neutral-900/40 to-neutral-950">
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <h2 class="font-serif text-3xl sm:text-4xl">Processo refinado de ponta a ponta</h2>
+        <p class="text-neutral-400 mt-3">Transparência, prazos respeitados e acabamento impecável. Você acompanha cada etapa.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="glass rounded-3xl p-6 fade-up">
+          <div class="w-11 h-11 rounded-xl bg-brand-600 mb-4 grid place-items-center">
+            <span class="font-bold">1</span>
+          </div>
+          <h3 class="font-medium">Briefing & Medição</h3>
+          <p class="text-neutral-400 mt-2">Entendimento de necessidades, estilo e funcionalidades. Medição técnica precisa no local.</p>
+        </div>
+        <div class="glass rounded-3xl p-6 fade-up">
+          <div class="w-11 h-11 rounded-xl bg-brand-600 mb-4 grid place-items-center">
+            <span class="font-bold">2</span>
+          </div>
+          <h3 class="font-medium">Projeto & Materiais</h3>
+          <p class="text-neutral-400 mt-2">Modelagem 3D, paleta de acabamentos e ferragens premium. Ajustes finos até a aprovação.</p>
+        </div>
+        <div class="glass rounded-3xl p-6 fade-up">
+          <div class="w-11 h-11 rounded-xl bg-brand-600 mb-4 grid place-items-center">
+            <span class="font-bold">3</span>
+          </div>
+          <h3 class="font-medium">Produção & Montagem</h3>
+          <p class="text-neutral-400 mt-2">Marcenaria de precisão, controle de qualidade e instalação limpa com proteção de ambiente.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="py-24">
+    <div class="mx-auto max-w-7xl px-6 grid lg:grid-cols-2 gap-10 items-center">
+      <div class="fade-up">
+        <h2 class="font-serif text-3xl sm:text-4xl">Design consciente, execução impecável</h2>
+        <p class="text-neutral-300 mt-4">Somos um estúdio de marcenaria especializado em móveis planejados de alto padrão. Unimos design autoral, processos industriais e manufatura artesanal para entregar ambientes únicos, duráveis e funcionais.</p>
+        <ul class="mt-6 space-y-3 text-neutral-300">
+          <li class="flex gap-3"><span class="text-brand-400">•</span> Madeiras certificadas e fornecedores selecionados</li>
+          <li class="flex gap-3"><span class="text-brand-400">•</span> Ferragens alemãs, amortecimento e sistemas invisíveis</li>
+          <li class="flex gap-3"><span class="text-brand-400">•</span> Garantia estendida e assistência pós-obra</li>
+        </ul>
+      </div>
+      <div class="rounded-3xl overflow-hidden fade-up">
+        <img src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?q=80&w=1600&auto=format&fit=crop" alt="Detalhe de marcenaria premium" class="w-full h-full object-cover"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA WHATSAPP -->
+  <section class="py-16">
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="glass rounded-3xl p-8 md:p-10 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div>
+          <h3 class="font-serif text-2xl">Vamos planejar seu ambiente?</h3>
+          <p class="text-neutral-300 mt-1">Envie plantas, medidas e referências. Respondemos rapidamente.</p>
+        </div>
+        <a href="https://wa.me/5599999999999" class="rounded-2xl bg-brand-600 px-6 py-3 font-medium hover:bg-brand-500 transition shadow-soft inline-flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M.057 24l1.687-6.164a11.867 11.867 0 01-1.62-6.003C.122 5.281 5.403 0 12.06 0c3.184 0 6.167 1.24 8.413 3.488a11.82 11.82 0 013.497 8.413c-.003 6.658-5.284 11.939-11.94 11.939a11.9 11.9 0 01-6.013-1.616L.057 24zm6.597-3.807c1.735 1.033 3.276 1.666 5.392 1.666 5.448 0 9.886-4.434 9.889-9.885.003-5.462-4.415-9.89-9.881-9.894-5.452 0-9.887 4.434-9.89 9.886 0 2.225.651 3.891 1.746 5.634l-.999 3.648 3.743-.955zm11.387-5.464c-.074-.124-.272-.198-.568-.347-.297-.149-1.758-.868-2.03-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.166-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.149-.173.198-.297.297-.496.099-.198.05-.372-.025-.521-.074-.149-.669-1.611-.916-2.205-.242-.58-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.694.626.712.227 1.36.195 1.872.118.571-.085 1.758-.718 2.006-1.41.248-.694.248-1.289.173-1.414z"/></svg>
+          Falar no WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="py-24 bg-neutral-900/40">
+    <div class="mx-auto max-w-7xl px-6 grid lg:grid-cols-2 gap-10">
+      <div class="fade-up">
+        <h2 class="font-serif text-3xl sm:text-4xl">Contato & Showroom</h2>
+        <p class="text-neutral-300 mt-3">Atendemos residencial e corporativo. Envie sua mensagem ou fale agora pelo WhatsApp.</p>
+        <div class="mt-6 space-y-3 text-neutral-300">
+          <p><strong>E-mail:</strong> contato@studiov.com.br</p>
+          <p><strong>Telefone:</strong> (99) 99999-9999</p>
+          <p><strong>Endereço:</strong> Rua Exemplo, 1000 – Bairro, Cidade/UF</p>
+        </div>
+      </div>
+      <form class="glass rounded-3xl p-6 space-y-4 fade-up" name="contact" method="POST" netlify>
+        <input type="hidden" name="form-name" value="contact">
+        <div>
+          <label class="block text-sm mb-1" for="nome">Nome</label>
+          <input id="nome" name="nome" required class="w-full rounded-xl bg-white/5 border border-white/10 px-4 py-3 outline-none focus:border-brand-400"/>
+        </div>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-sm mb-1" for="email">E-mail</label>
+            <input id="email" type="email" name="email" required class="w-full rounded-xl bg-white/5 border border-white/10 px-4 py-3 outline-none focus:border-brand-400"/>
+          </div>
+          <div>
+            <label class="block text-sm mb-1" for="telefone">Telefone/WhatsApp</label>
+            <input id="telefone" name="telefone" class="w-full rounded-xl bg-white/5 border border-white/10 px-4 py-3 outline-none focus:border-brand-400"/>
+          </div>
+        </div>
+        <div>
+          <label class="block text-sm mb-1" for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="5" required class="w-full rounded-xl bg-white/5 border border-white/10 px-4 py-3 outline-none focus:border-brand-400"></textarea>
+        </div>
+        <button class="rounded-2xl bg-brand-600 px-6 py-3 font-medium hover:bg-brand-500 transition shadow-soft">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="py-10 border-t border-white/10">
+    <div class="mx-auto max-w-7xl px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-neutral-400 text-sm">
+      <p>© <span id="year"></span> Studio Verde. Todos os direitos reservados.</p>
+      <div class="flex items-center gap-5">
+        <a href="#" aria-label="Instagram" class="hover:text-brand-300">Instagram</a>
+        <a href="#" aria-label="Pinterest" class="hover:text-brand-300">Pinterest</a>
+        <a href="#" aria-label="Behance" class="hover:text-brand-300">Behance</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JSON-LD LocalBusiness (ajuste os dados) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Studio Verde – Móveis Planejados",
+    "image": "https://example.com/capa.jpg",
+    "url": "https://seuusuario.github.io/studio-verde/",
+    "telephone": "+55-99-9999-9999",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua Exemplo, 1000",
+      "addressLocality": "Cidade",
+      "addressRegion": "UF",
+      "postalCode": "00000-000",
+      "addressCountry": "BR"
+    },
+    "priceRange": "$$$",
+    "areaServed": "Brasil",
+    "sameAs": ["https://www.instagram.com/seuperfil"]
+  }
+  </script>
+
+  <!-- JS: menu, ano atual, animações simples -->
+  <script>
+    const yearEl = document.getElementById('year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn?.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+      for (const entry of entries) {
+        if (entry.isIntersecting) entry.target.classList.add('show');
+      }
+    }, { threshold: 0.16 });
+
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
